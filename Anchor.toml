@@ -12,7 +12,7 @@ my_first_transaction = "9bEZzU79kVvmUMuYdLze5pDvswKTDmLjGws6LCdeZBG2"
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "localnet"
+cluster = "devnet"
 wallet = "~/.config/solana/id.json"
 
 [scripts]

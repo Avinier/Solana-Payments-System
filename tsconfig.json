@@ -2,9 +2,20 @@
   "compilerOptions": {
     "types": ["mocha", "chai"],
     "typeRoots": ["./node_modules/@types"],
-    "lib": ["es2015"],
+    "lib": ["es2015", "dom", "dom.iterable"], // Added DOM libs
     "module": "commonjs",
     "target": "es6",
-    "esModuleInterop": true
-  }
+    "jsx": "react-jsx", // Added JSX support for React 17+
+    "moduleResolution": "node", // Added standard module resolution
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true, // Often helpful
+    "skipLibCheck": true, // Can speed up builds and avoid lib errors
+    "resolveJsonModule": true // Allow importing .json files
+  },
+  "include": [ // Added include to specify which files TS should process
+    "app/**/*", // Include the app directory
+    "tests/**/*", // Include tests
+    "migrations/**/*" // Include migrations
+  ],
+  "exclude": ["node_modules"] // Exclude node_modules
 }
