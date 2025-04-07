@@ -9,6 +9,7 @@ Created by:
 - c170 Anirudh Pathak
 - c166 Aman Khatri
 - c194 Utsav Chougule
+- c180 Rishiraj Parmar
 
 ## Architecture
 
